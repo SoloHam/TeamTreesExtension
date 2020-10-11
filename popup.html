@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Trees</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Modal Structure */
+
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+        background: url(images/social-share-earth-astronaut-1-9x1.png);
+        background-size:contain;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;              /* optional, center the image */
+      }
+
+        p {
+            
+            color: #8ab73f;
+        }
+      h1 {
+        font-family: "Montserrat", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #8ab73f;
+      }
+      h2 {
+        font-family: "Montserrat", monospace;
+        font-size: 65px;
+        font-weight: 400;
+        text-align: center; 
+        vertical-align: middle;
+        color:#8ab73f;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #a5ca6a;
+        text-shadow:
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+      }
+
+
+      a:link,
+      a:visited {
+        color: #000000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        /* margin-top: 65px; */
+        align-items: center;
+        /* border-bottom: 0.5px solid #8ab73f; */
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #8ab73f;
+        height: 50px;
+        width: 100%;
+        
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 18px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+        width: 100%;
+
+      }
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+      }
+
+      .flex:hover {
+        opacity: 0.4;
+      }
+
+      .flex .fa {
+        font-size: 40px;
+        color: #2f5876;
+      }
+
+      .footer {
+        position:fixed;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        align-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <!-- <h1 class="logo">
+        <img class="logo-icon" src="images/logo-teamtrees-full.svg" />Team Trees
+        <span class="version"></span>
+      </h1> -->
+    </div>
+    <div class="modal-content" >
+      <h2 id="totalTrees">1,102,241</h2>
+    </div>
+    <div class="footer">
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                <a href="https://www.traversymedia.com" target="_blank">
+                    <i class="fa fa-globe" style="color:#8ab73f "></i>
+                </a>
+                </div>
+                <div class="flex">
+                <a href="https://www.youtube.com/traversymedia" target="_blank">
+                    <i class="fa fa-youtube" style="color:#c2c2c2;"></i>
+                </a>
+                </div>
+                <div class="flex">
+                <a href="https://www.twitter.com/traversymedia" target="_blank">
+                    <i class="fa fa-twitter" style="color:#c2c2c2;"></i>
+                </a>
+                </div>
+                <div class="flex">
+                <a href="https://www.facebook.com/traversymedia" target="_blank">
+                    <i class="fa fa-facebook" style="color:#8ab73f "></i>
+                </a>
+                </div>
+                <div class="flex">
+                <a href="https://www.github.com/bradtraversy" target="_blank">
+                    <i class="fa fa-github" style="color:#8ab73f "></i>
+                </a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+  </body>
+  
+  <script src="Jquery.min.js"></script>
+  <script src="popup.js"></script>
+</html>
